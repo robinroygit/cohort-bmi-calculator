@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="bgblu">
+
+        <div class="bmi-calculator ">
+
+            <h1>BMI CALCULATOR</h1>
+
+            <div class="first">
+                <div class="gender center" id="male">
+                    <img class="icon" src="m.png" alt="Male" width="50">
+                    <span>MALE</span>
+                </div>
+                <div class="gender center" id="female">
+                    <img class="icon" src="f.png" alt="Female" width="50">
+                    <span>FEMALE</span>
+                </div>
+            </div>
+
+            <div class="second center">
+                <div>
+                    <label for="height-range" class="center text-gray">HEIGHT</label>
+                    <div class="height-value">
+                        <span id="height-display">50</span><p>cm</p>
+                    </div>
+                </div>
+                <input id="height-range" type="range" value="50" min="50" max="300" class="height-input">
+            </div>
+
+
+            <div class="third center">
+                <div class="weight-age">
+                    <span class="weight-age-title text-gray">WEIGHT</span>
+                    <span id="weight-value" class="weight-age-value ">70</span>
+                    <div class="pm center">
+                        <button id="weight-decrease" class="pl-mi">-</button>
+                        <button id="weight-increase" class="pl-mi">+</button>
+                    </div>
+                </div>
+
+                <div class="weight-age">
+                    <span class="weight-age-title text-gray">AGE</span>
+                    <span id="age-value" class="weight-age-value ">25</span>
+                    <div class="pm center">
+                        <button id="age-decrease" class="pl-mi">-</button>
+                        <button id="age-increase" class="pl-mi">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <button id="calculate-btn" class="btn">CALCULATE YOUR BMI</button>
+            </div>
+
+            <div class="result">
+                <p id="bmi-result">Your BMI will appear here.</p>
+            </div>
+
+
+         
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
